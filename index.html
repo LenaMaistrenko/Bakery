@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bakery</title>
+    <title>Пекарня</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"> <img src="./img/logo.svg" alt="Логотип" /> </a>
-        <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+        <a href="./index.html"> <img src="./img/logo.svg" alt="Логотип" /> </a>
+        <ul class="advantages-list">
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <button type="button">Замовити дзвінок</button>
     </header>
     <main>
-      <section>
+      <section class="section-title">
         <ul>
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title">Сучасна <span class="accent">пекарня</span></h1>
       </section>
-      <section>
+      <section id="traditions-section" class="section-title">
         <h2>Новий формат традиції</h2>
         <p>
           <span>shop bakery</span>— це пекарня, яка взяла все найкраще, і
@@ -40,8 +41,8 @@
         </p>
         <img src="./img/backer-man.jpg" alt="Пекар дивиться на хліб" />
       </section>
-      <section>
-        <h2>Наші найкращі шеф-кухарі</h2>
+      <section id="chefs-section" class="section-title">
+        <h2>Наші найкращі <span class="accent">шеф-кухарі</span></h2>
         <ul>
           <li>
             <article>
@@ -64,21 +65,32 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section " class="section-title">
         <h2>Формати</h2>
         <ul>
           <li>
-            <article><h3>Walrus</h3></article>
+            <article><h3 lang="en">Walrus</h3></article>
           </li>
           <li>
-            <article><h3>Horseshoe</h3></article>
+            <article><h3 lang="en">Horseshoe</h3></article>
           </li>
           <li>
-            <article><h3>Hendlebar</h3></article>
+            <article><h3 lang="en">Hendlebar</h3></article>
           </li>
         </ul>
       </section>
-      <section><h2>Приєднуйся до мережі пекарень</h2></section>
+      <section id="contacts-section" class="section-title">
+        <h2>Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700659259388!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <footer>
       <nav>
@@ -102,9 +114,10 @@
             >
           </li>
           <li><a href="#">Facebook icon</a></li>
-          <li><a href="#">Instagram</a>/li></li>
+          <li><a href="#">Instagram</a></li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
