@@ -1,0 +1,52 @@
+.input{
+    position: relative;
+    &__label {
+            display: block;
+            position: absolute;
+            top: 16px;
+            left: 42px;
+            font-size: 16px;
+            line-height: 1.17;
+            transition: transform 0.3s;
+        }
+    &__control {
+            padding: 15px 42px;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--color-secondarydark);
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 1.17;
+            &:focus {
+                border-color: var(--color-primary-brand-dark);
+                outline: none;
+                }
+            &::placeholder{
+                color: var(--color-secondarydark);
+                font-size: 16px;
+                line-height: 1.17;
+            }
+            &:focus::placeholder{
+                color:var(--color-primary-dark);
+            }
+                }
+
+}
+
+
+
+// .input-form:focus+.label-form {
+//     transform: translate(-35px, -40px);
+// }
+
+
+
+
+// .button[disabled] {
+//     background-color: var(--color-primary-light);
+//     color: gray;
+//     border-color: gray;
+//     cursor: n;
+// }
+
+

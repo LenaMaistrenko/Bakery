@@ -1,0 +1,29 @@
+.contact-section{
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        color: var(--color-primary-brand-dark);
+    }
+
+    &__container {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        border-radius: 15px;
+    }
+    &__button {
+        margin: 0 auto 15px;
+        display: block;
+        }
+    &__form-field{
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+}
