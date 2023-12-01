@@ -29,13 +29,32 @@
     background-color: var(--color-primary-light);
     border-radius: 32px;
     position: relative;
-    padding: 128px;
+    padding: 48px;
     overflow: auto;
+    @media screen and (min-width: $bp-tablet) {
+            padding: 128px;
+        }
     &__btn-close {
             position: absolute;
             top: 40px;
             right: 40px;
+            width: 20px;
+            height: 20px;
+            border: none;
+            background-color: transparent;
+            &--icon{
+               fill: var(--color-primary-dark); 
+            }
         }
+    &__title{
+    text-align: center;
+
+    }
+    &__text {
+        text-align: center;
+        color: var(--color-primary-brand-dark);
+    
+    }
     &__form-field {
         margin-bottom: 24px; 
 

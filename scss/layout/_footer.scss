@@ -1,5 +1,6 @@
 /* Footer */
 .footer {
+    
     background-color: var(--color-primary-dark);
     background-image: url(../img/footer-background.png);
     background-repeat: no-repeat;
@@ -7,83 +8,90 @@
     background-position: center;
     padding: 32px 0;
     position: relative;
-}
+    &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/footer-bread-small.png");
+            width: 180px;
+            height: 120px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            bottom: 0;
+            left: 0;
+        }
+    
+    &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../img/footer-bread-big.png");
+            width: 380px;
+            height: 190px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            bottom: 0;
+            right: 0;
+        }
+    &__container {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+                }
+    }
+        
+    &__nav,
+    &__address {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+                flex-basis: 50%;
+                text-align: left;
+                }
+            }
+        
+    &__logo {
+            flex-grow: 1;
+            }
+        
+    &__menu {
+            flex-grow: 1;
+            }
 
-.footer::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/footer-bread-small.png");
-    width: 180px;
-    height: 120px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
-}
-
-.footer::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/footer-bread-big.png");
-    width: 380px;
-    height: 190px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
-}
-
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-nav {
-    flex-basis: 50%;
-    display: flex;
-}
-
-.footer-logo {
+    &__address-list {
     flex-grow: 1;
-}
+    }
 
-.footer-menu {
+    &__address-info {
     flex-grow: 1;
-}
-
-.address-list {
-    flex-grow: 1;
-}
-
-.address-info {
-    flex-grow: 1;
-}
-
-.footer-address {
-    flex-basis: 50%;
-    display: flex;
-}
-
-.address-link {
+    }
+    &__address-link {
     font-size: 16px;
     font-weight: 300;
     color: var(--color-primary-light);
     text-decoration: none;
-}
+    }
 
-.address-link:hover {
+    &__address-link:hover {
     color: var(--color-primary-dark);
-}
-
-.address-icon {
+    }
+    
+    &__address-icon {
+    margin:20px 20px;
     fill: var(--color-primary-light);
-}
+    }
 
-.address-icon:hover {
+    &__address-icon:hover {
     fill: var(--color-primary-brand-light);
-}
+    }
 
-.address-copyright {
+    &__address-copyright {
     color: #a18268;
     font-size: 14px;
+    }        
 }
+
+

@@ -1,21 +1,45 @@
 .contact-section{
     &__title {
         margin-bottom: 16px;
+        text-align: center;
+        @media screen and (min-width: $bp-tablet) {
+                text-align: left;
+            }
     }
 
     &__text {
         color: var(--color-primary-brand-dark);
+        text-align: center;
+            @media screen and (min-width: $bp-tablet) {
+                text-align: left;
+            }
     }
 
     &__container {
         display: flex;
-        gap: 32px;
+        gap: 24px;
+        flex-direction:column;
+        @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+            }
     }
 
     &__map {
         flex-shrink: 0;
         border: none;
         border-radius: 15px;
+        // width: 100%;
+        height: 175px;
+        margin: 0 -24px;
+        @media screen and (min-width: $bp-tablet) {
+                margin: auto;
+                width: 320px;
+                height: 595px;
+            }
+        @media screen and (min-width: $bp-desktop) {
+             width: 599px;
+             height: 595px;
+         }
     }
     &__button {
         margin: 0 auto 15px;
